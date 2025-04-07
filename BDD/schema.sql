@@ -48,4 +48,8 @@ CONSTRAINT FOREIGN KEY  (candidat_id) REFERENCES candidat(id)
 );
 
 
-INSERT INTO TABLE entreprise
+INSERT INTO entreprise (id, nom, description)
+VALUES 
+(1, "Renault", "Constructeur de voitures"),
+(2, "AXA", "Assureur"),
+(3, "Carrefour", "Grande distribution");
