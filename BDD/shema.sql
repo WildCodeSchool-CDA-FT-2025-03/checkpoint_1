@@ -27,7 +27,7 @@ CREATE TABLE Company (
     name VARCHAR(45) NOT NULL,
     description TEXTLONG NOT NULL,
     id_recruiter INT,
-    FOREIGN KEY (id_recruiter) REFERENCES Recruiter(id)
+    FOREIGN KEY (id_recruiter) REFERENCES Recruiter(id) 
 );
 
 -- Table JOBOFFER
@@ -42,18 +42,18 @@ CREATE TABLE JobOffer (
 
 -- Table COMPANY_LIST (relation Candidate - Company)
 CREATE TABLE Company_List (
-    PRIMARY KEY (id_jobOffer, id_candidate),
     id_company INT,
     id_candidate INT,
     FOREIGN KEY (id_company) REFERENCES Company(id),
-    FOREIGN KEY (id_candidate) REFERENCES Candidate(id)
+    FOREIGN KEY (id_candidate) REFERENCES Candidate(id),
+    PRIMARY KEY (id_company, id_candidate), -- Un candidat ne pourra pas avoir plusieurs entreprise dans sa liste d'entreprise
 );
 
 -- Table CANDIDATE_LIST (relation Candidate - JobOffer)
 CREATE TABLE Candidate_List (
-    PRIMARY KEY (id_jobOffer, id_candidate),
     id_jobOffer INT,
     id_candidate INT,
     FOREIGN KEY (id_jobOffer) REFERENCES JobOffer(id),
-    FOREIGN KEY (id_candidate) REFERENCES Candidate(id)
+    FOREIGN KEY (id_candidate) REFERENCES Candidate(id),
+    PRIMARY KEY (id_jobOffer, id_candidate), -- Un candidat ne pourra pas postuler deux fois a la meme offre
 );
