@@ -10,7 +10,7 @@
     "dev": "ts-node arr.ts",
     "test": "jest",
     "exportDB": "dotenv -e .env -- bash exportDB.sh",
-    "importDB": "dotenv -e .env -- bash exportDB.sh"
+    "importDB": "dotenv -e .env -- bash importDB.sh"
   },
   "devDependencies": {
     "dotenv-cli": "^8.0.0"
