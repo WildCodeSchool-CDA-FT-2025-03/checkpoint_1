@@ -32,7 +32,7 @@ CREATE TABLE `candidat` (
   `telephone` varchar(20) DEFAULT NULL,
   `presentation` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,6 +41,7 @@ CREATE TABLE `candidat` (
 
 LOCK TABLES `candidat` WRITE;
 /*!40000 ALTER TABLE `candidat` DISABLE KEYS */;
+INSERT INTO `candidat` VALUES (1,'jdupont','mdp123','Dupont','Jean','jean.dupont@mail.com','0601020304','Développeur passionné.'),(2,'alemoine','mdp456','Lemoine','Alice','alice.lemoine@mail.com','0612345678','Jeune diplômée en informatique.'),(3,'knguyen','mdp789','Nguyen','Kevin','kevin.nguyen@mail.com','0678123456','En reconversion vers le dev web.');
 /*!40000 ALTER TABLE `candidat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +62,7 @@ CREATE TABLE `candidature` (
   KEY `id_offre` (`id_offre`),
   CONSTRAINT `candidature_ibfk_1` FOREIGN KEY (`id_candidat`) REFERENCES `candidat` (`id`),
   CONSTRAINT `candidature_ibfk_2` FOREIGN KEY (`id_offre`) REFERENCES `offre` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,6 +71,7 @@ CREATE TABLE `candidature` (
 
 LOCK TABLES `candidature` WRITE;
 /*!40000 ALTER TABLE `candidature` DISABLE KEYS */;
+INSERT INTO `candidature` VALUES (1,1,1,'2025-04-01'),(2,1,2,'2025-04-02'),(3,2,3,'2025-04-03'),(4,3,1,'2025-04-04'),(5,2,4,'2025-04-05');
 /*!40000 ALTER TABLE `candidature` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +87,7 @@ CREATE TABLE `entreprise` (
   `nom` varchar(150) NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,6 +96,7 @@ CREATE TABLE `entreprise` (
 
 LOCK TABLES `entreprise` WRITE;
 /*!40000 ALTER TABLE `entreprise` DISABLE KEYS */;
+INSERT INTO `entreprise` VALUES (1,'Tech Solutions','Entreprise spécialisée dans les solutions web.'),(2,'DevCorp','Start-up innovante dans la tech.'),(3,'CodeFactory','Agence de développement d?applications.');
 /*!40000 ALTER TABLE `entreprise` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +116,7 @@ CREATE TABLE `offre` (
   PRIMARY KEY (`id`),
   KEY `id_entreprise` (`id_entreprise`),
   CONSTRAINT `offre_ibfk_1` FOREIGN KEY (`id_entreprise`) REFERENCES `entreprise` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,6 +125,7 @@ CREATE TABLE `offre` (
 
 LOCK TABLES `offre` WRITE;
 /*!40000 ALTER TABLE `offre` DISABLE KEYS */;
+INSERT INTO `offre` VALUES (1,'Développeur Front-End','Travail sur les interfaces React.','Paris',1),(2,'Backend Node.js','Création d?API REST pour notre produit.','Lyon',2),(3,'Fullstack JS','Projet de refonte d?une application web.','Montpellier',2),(4,'Développeur WordPress','Maintenance de sites clients.','Bordeaux',3);
 /*!40000 ALTER TABLE `offre` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -140,7 +144,7 @@ CREATE TABLE `recruteur` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_entreprise` (`id_entreprise`),
   CONSTRAINT `recruteur_ibfk_1` FOREIGN KEY (`id_entreprise`) REFERENCES `entreprise` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,6 +153,7 @@ CREATE TABLE `recruteur` (
 
 LOCK TABLES `recruteur` WRITE;
 /*!40000 ALTER TABLE `recruteur` DISABLE KEYS */;
+INSERT INTO `recruteur` VALUES (1,'techrecruteur','recrut123',1),(2,'rhdevcorp','devcorp456',2),(3,'hrcodefactory','code789',3);
 /*!40000 ALTER TABLE `recruteur` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -161,4 +166,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-07 13:23:01
+-- Dump completed on 2025-04-07 13:29:35
