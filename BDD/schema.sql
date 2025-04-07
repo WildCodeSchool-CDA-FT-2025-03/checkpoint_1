@@ -2,7 +2,7 @@
 CREATE TABLE entreprise (
 id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 nom VARCHAR(100) NOT NULL,
-password VARCHAR(100) NOT NULL
+description VARCHAR(255) NOT NULL
 );
 
 
@@ -46,3 +46,6 @@ candidat_id INT NOT NULL,
 CONSTRAINT FOREIGN KEY  (entreprise_id) REFERENCES entreprise(id),
 CONSTRAINT FOREIGN KEY  (candidat_id) REFERENCES candidat(id)
 );
+
+
+INSERT INTO TABLE entreprise
