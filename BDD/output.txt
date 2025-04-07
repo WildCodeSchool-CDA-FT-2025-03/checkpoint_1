@@ -1,0 +1,44 @@
+
+1. Toutes les offres d'emploi d'une ville (Paris)
++----+-------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+--------------+
+| id | name                    | description                                                                                                              | city  | recruiter_id |
++----+-------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+--------------+
+|  1 | Développeur Full Stack  | Nous recherchons un développeur full stack maîtrisant React, Node.js et MongoDB pour rejoindre notre équipe dynamique    | Paris |            1 |
+|  6 | Développeur Mobile      | Développez des applications mobiles performantes pour iOS et Android en utilisant React Native                           | Paris |            5 |
++----+-------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+--------------+
+
+2. Les informations de tous les candidats qui ont postulé à une offre précise
+Exemple avec l'offre "Développeur Full Stack" (id = 1)
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+| id | email                    | password | presentation                                                         | phone      | firstname | lastname |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+|  1 | alex.durand@email.com    | hash123  | Développeur full-stack avec 5 ans d'expérience en React et Node.js   | 0612345678 | Alex      | Durand   |
+|  8 | camille.dubois@email.com | hash890  | Ingénieure backend spécialisée en architecture microservices         | 0689012345 | Camille   | Dubois   |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+
+Variante : si on connaît le nom de l'offre plutôt que son ID
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+| id | email                    | password | presentation                                                         | phone      | firstname | lastname |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+|  1 | alex.durand@email.com    | hash123  | Développeur full-stack avec 5 ans d'expérience en React et Node.js   | 0612345678 | Alex      | Durand   |
+|  8 | camille.dubois@email.com | hash890  | Ingénieure backend spécialisée en architecture microservices         | 0689012345 | Camille   | Dubois   |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+
+3. Les informations de tous les candidats qui ont postulé aux offres d'une entreprise
+Exemple avec l'entreprise "TechInnovate" (id = 1)
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+| id | email                    | password | presentation                                                         | phone      | firstname | lastname |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+|  1 | alex.durand@email.com    | hash123  | Développeur full-stack avec 5 ans d'expérience en React et Node.js   | 0612345678 | Alex      | Durand   |
+|  8 | camille.dubois@email.com | hash890  | Ingénieure backend spécialisée en architecture microservices         | 0689012345 | Camille   | Dubois   |
+|  5 | hugo.fournier@email.com  | hash567  | DevOps engineer expérimenté en environnements cloud                  | 0656789012 | Hugo      | Fournier |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+
+Variante : si on connaît le nom de l'entreprise plutôt que son ID
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+| id | email                    | password | presentation                                                         | phone      | firstname | lastname |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
+|  1 | alex.durand@email.com    | hash123  | Développeur full-stack avec 5 ans d'expérience en React et Node.js   | 0612345678 | Alex      | Durand   |
+|  8 | camille.dubois@email.com | hash890  | Ingénieure backend spécialisée en architecture microservices         | 0689012345 | Camille   | Dubois   |
+|  5 | hugo.fournier@email.com  | hash567  | DevOps engineer expérimenté en environnements cloud                  | 0656789012 | Hugo      | Fournier |
++----+--------------------------+----------+----------------------------------------------------------------------+------------+-----------+----------+
