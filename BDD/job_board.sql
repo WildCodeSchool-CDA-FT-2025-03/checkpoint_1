@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS `candidate` (
     `first_name` VARCHAR(100) NOT NULL,
     `last_name` VARCHAR(100) NOT NULL,
     `email` VARCHAR(255) NOT NULL,
-    `phone_number` INT NOT NULL,
-    `desc` VARCHAR(1000) NOT NULL,
+    `phone_number` VARCHAR(20) NOT NULL,
+    `desc` VARCHAR(1000),
 );
 
 CREATE TABLE IF NOT EXISTS `recruiter` (
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `recruiter` (
 CREATE TABLE IF NOT EXISTS `company` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(100) NOT NULL,
-    `desc` VARCHAR(1000) NOT NULL,
+    `desc` VARCHAR(1000),
 );
 
 CREATE TABLE IF NOT EXISTS `job` (
