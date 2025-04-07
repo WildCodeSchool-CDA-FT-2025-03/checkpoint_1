@@ -37,7 +37,7 @@ CREATE TABLE offer (
 
 CREATE TABLE candidacy (
   candidate_id integer,
-  company_id integer,
+  offer_id integer,
   FOREIGN KEY (candidate_id) REFERENCES candidate(id),
-  FOREIGN KEY (company_id) REFERENCES company(id)
+  FOREIGN KEY (offer_id) REFERENCES company(id)
 );
