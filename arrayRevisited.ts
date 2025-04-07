@@ -15,17 +15,29 @@ class ArrayRevisited {
   }
 
   filter(callback: (value: string, index: number, array: string[]) => boolean): string[] {
-    const filteredArray: string[] = [];
+    let newLong = 0;
 
-    for (let i = 0; i < this.value.length; i++) {
+    for (let i = 0; i < this.length; i++) {
       if (callback(this.value[i], i, this.value)) {
-        filteredArray.push(this.value[i]);
+        newLong ++
       }
     }
-
-    return filteredArray;
+    const result = new Array(newLong);
+ let j = 0;
+    for (let i = 0; i < this.length; i++) {
+      if (callback(this.value[i], i, this.value)) {
+        result[j] = this.value[i]
+      }
+    }
+  return result;
+    
   }
-}
+    
+  }
+
+  
+
+
 
 export default ArrayRevisited;
 

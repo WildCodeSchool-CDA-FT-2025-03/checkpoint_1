@@ -18,3 +18,4 @@ INNER JOIN Candidate_List ON Candidate.id = Candidate_List.id_candidate
 INNER JOIN JobOffer ON Candidate_List.id_jobOffer = JobOffer.id
 INNER JOIN Company ON JobOffer.id_recruiter = Company.id_recruiter
 WHERE Company.id = 30;
+
