@@ -15,6 +15,7 @@ CREATE TABLE offre (
   title VARCHAR(255),
   description TEXT,
   city VARCHAR(100)
+  company_id INT REFERENCES entreprise(id);
 );
 
 CREATE TABLE candidat (

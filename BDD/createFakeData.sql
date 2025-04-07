@@ -8,17 +8,17 @@ INSERT INTO Entreprise (name, description) VALUES
 ('GastroLab', 'Cuisine moléculaire et expérimentale'),
 ('Pasta & Co', 'Restaurant italien artisanal');
 
-INSERT INTO Candidat (username, password, lastname, firtname, email, tel, presentation) VALUES
+INSERT INTO Candidat (username, password, lastname, firstname, email, tel, presentation) VALUES
 ('chef_jacques', '$2y$10$B3d5F7h9J1k3L5m7N9oP1qR3s5T7u9V1w', 'Dupont', 'Jacques', 'jacques.dupont@email.com', '0612345678', 'Chef cuisinier avec 10 ans d''expérience en gastronomie française'),
 ('pizza_lover', '$2y$10$C4e6F8g0H2i4J6k8L0m2N4o6P8q0R2s4T', 'Martin', 'Sophie', 'sophie.martin@email.com', '0698765432', 'Spécialiste de la cuisine italienne, passionnée par les pâtes fraîches'),
 ('baker_amy', '$2y$10$D5f7G9h1J3l5M7o9P1qR3s5T7u9V1wX3', 'Johnson', 'Amy', 'amy.johnson@email.com', '0687654321', 'Boulangère-pâtissière formée à l''école Lenôtre');
 
 
-INSERT INTO Offres (title, description, city) VALUES
-('Chef de Cuisine', 'Recherche chef expérimenté pour notre bistrot parisien. CDI temps plein.', 'Paris'),
-('Serveur/Serveuse', 'Poste en salle avec expérience en restauration traditionnelle requise.', 'Paris'),
-('Chef Pâtissier', 'Pour développer notre offre desserts moléculaires. Créativité requise.', 'Lyon'),
-('Pizzaiolo', 'Maîtrise du four à bois nécessaire. Contrat saisonnier possible.', 'Marseille');
+INSERT INTO Offre (title, description, city, company_id) VALUES
+('Chef de Cuisine', 'Recherche chef expérimenté pour notre bistrot parisien. CDI temps plein.', 'Paris',1),
+('Serveur/Serveuse', 'Poste en salle avec expérience en restauration traditionnelle requise.', 'Paris', 1),
+('Chef Pâtissier', 'Pour développer notre offre desserts moléculaires. Créativité requise.', 'Lyon',2),
+('Pizzaiolo', 'Maîtrise du four à bois nécessaire. Contrat saisonnier possible.', 'Marseille',3);
 
 
 INSERT INTO Candidature (candidat_id, offer_id, date, statut) VALUES
