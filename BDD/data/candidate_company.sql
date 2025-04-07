@@ -1,0 +1,10 @@
+insert into candidate_job (id, id_candidate, id_job) values (1, 5, 7);
+insert into candidate_job (id, id_candidate, id_job) values (2, 3, 9);
+insert into candidate_job (id, id_candidate, id_job) values (3, 9, 12);
+insert into candidate_job (id, id_candidate, id_job) values (4, 22, 60);
+insert into candidate_job (id, id_candidate, id_job) values (5, 53, 24);
+insert into candidate_job (id, id_candidate, id_job) values (6, 16, 32);
+insert into candidate_job (id, id_candidate, id_job) values (7, 32, 54);
+insert into candidate_job (id, id_candidate, id_job) values (8, 25, 47);
+insert into candidate_job (id, id_candidate, id_job) values (9, 47, 16);
+insert into candidate_job (id, id_candidate, id_job) values (10, 60, 22);
