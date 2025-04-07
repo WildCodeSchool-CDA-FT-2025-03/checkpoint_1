@@ -13,6 +13,19 @@ class ArrayRevisited {
     this.length++;
     return this.length;
   }
+
+  filter(callback: (el: string, index: number) => boolean): string[] {
+    const array = new Array(this.value.length);
+    let j = 0;
+
+    for (let i = 0; i < this.value.length; i++) {
+      if (callback(this.value[i], i)) {
+        array[j] = this.value[i];
+        j++;
+      }
+    }
+    return array;
+  }
 }
 
 export default ArrayRevisited;
