@@ -7,7 +7,7 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "dev": "ts-node arr.ts",
+    "dev": "ts-node arrayRevisited.ts",
     "test": "jest"
   }
 }
