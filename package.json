@@ -8,6 +8,10 @@
   },
   "scripts": {
     "dev": "ts-node arr.ts",
-    "test": "jest"
+    "test": "jest",
+    "exportDB": "dotenv -e .env -- bash exportDB.sh"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
   }
 }
