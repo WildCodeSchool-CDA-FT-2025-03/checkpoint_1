@@ -49,4 +49,3 @@ CREATE TABLE IF NOT EXISTS `candidate_company` (
     FOREIGN KEY (`id_candidate`) REFERENCES `candidate`(`id`),
     FOREIGN KEY (`id_company`) REFERENCES `company`(`id`),
 );
-
