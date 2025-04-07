@@ -1,5 +1,6 @@
-class Arr {
+class ArrayRevisited {
   value: string[] = [];
+  length: number = 0;
 
   push(el: string): number {
     const array = new Array(this.value.length + 1);
@@ -9,8 +10,9 @@ class Arr {
     }
     array[this.value.length] = el;
     this.value = array;
-    return this.value.length;
+    this.length++;
+    return this.length;
   }
 }
 
-export default Arr;
+export default ArrayRevisited;
