@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.3.1 Safari/537.36" version="26.0.9">
   <diagram name="Page-1" id="Jn1SN3O0HbxsJPFlk4Q4">
-    <mxGraphModel dx="2698" dy="1843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2099" dy="1261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -144,7 +144,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-112" value="recruteurs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1590" y="680" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-213" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-112">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-244" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-112">
           <mxGeometry y="30" width="350" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-212" value="FOREIGN KEY (recruteurs_secrets_id)&amp;nbsp;&lt;div&gt;REFERENCES secrets(id)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-112">
@@ -153,7 +153,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-115" value="candidats" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1230" y="825" width="320" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-210" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-115">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-247" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-115">
           <mxGeometry y="30" width="320" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-242" value="FOREIGN KEY (candidats_secrets_id)&amp;nbsp;&lt;div&gt;REFERENCES secret(id)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-115">
@@ -177,7 +177,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-124" value="entreprises" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="870" y="970" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-205" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-124">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-249" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-124">
           <mxGeometry y="30" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-131" value="nom VARCHAR[255] NOT NULL, UNIQUE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-124">
@@ -189,7 +189,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-129" value="offres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="870" y="830" width="330" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-204" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-129">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-248" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-129">
           <mxGeometry y="30" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-241" value="FOREIGN KEY (offres_villes_id)&amp;nbsp;&lt;div&gt;REFERENCES villes(id)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-129">
@@ -198,7 +198,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-134" value="secrets" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1580" y="790" width="250" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-215" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-134">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-245" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-134">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-216" value="login VARCHAR[64]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-134">
@@ -213,7 +213,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-150" value="entreprises_offres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="870" y="680" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-151" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-150">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-151" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-150">
           <mxGeometry y="30" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-152" value="FOREIGN KEY (entreprises_offres_offre_id)&amp;nbsp;&lt;div&gt;REFERENCES offres(id)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-150">
@@ -339,7 +339,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-206" value="candidats_offres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1220" y="680" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-207" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-206">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-243" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-206">
           <mxGeometry y="30" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-208" value="FOREIGN KEY (candidats_offres_offre_id)&amp;nbsp;&lt;div&gt;REFERENCES offre(id)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-206">
@@ -388,7 +388,7 @@
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-237" value="villes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1580" y="940" width="250" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-238" value="id uuid PRIMARY KEY NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-237">
+        <mxCell id="bnbo3fdq7Xhf0Iy2233Q-246" value="id int PRIMARY KEY NOT AUTO_INCREMENT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-237">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bnbo3fdq7Xhf0Iy2233Q-239" value="name VARCHAR[64]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="bnbo3fdq7Xhf0Iy2233Q-237">
